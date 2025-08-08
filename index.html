@@ -1,53 +1,86 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pathway Global Trading Contracting & Services</title>
-<style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-    header { display: flex; justify-content: space-between; align-items: center; background: #fff; padding: 10px 20px; border-bottom: 2px solid #992B40; }
-    header img { height: 80px; }
-    nav { background: #fff; border: 2px solid #992B40; border-radius: 30px; padding: 10px 20px; margin: 10px auto; display: inline-block; }
-    nav a { margin: 0 15px; text-decoration: none; color: #992B40; font-weight: bold; }
-    nav a:hover { color: #fff; background: #992B40; padding: 5px 10px; border-radius: 20px; }
-</style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Pathway Global — Contracting & Services</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-    <div style="flex:1; text-align:left;">
-        <h2 style="margin:0; color:#992B40;">Pathway Global Trading Contracting & Services</h2>
-    </div>
-    <div style="flex:1; text-align:center;">
-        <img src="logo.png" alt="Pathway Global Logo">
-    </div>
-    <div style="flex:1; text-align:right;">
-        <h2 style="margin:0; color:#992B40;">باتواي جلوبال للتجارة والمقاولات والخدمات</h2>
-    </div>
-</header>
-<div style="text-align:center;">
-    <nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <img src="logo.png" alt="Pathway Global logo" class="site-logo">
+      <nav class="nav">
         <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#contact">Contact</a>
-    </nav>
-</div>
-<section id="about" style="padding:20px; background:#f8f8f8;">
-    <h2 style="color:#992B40;">About Us</h2>
-    <p>Welcome to Pathway Global Trading Contracting & Services...</p>
-</section>
-<section id="services" style="padding:20px;">
-    <h2 style="color:#992B40;">Our Services</h2>
-    <ul>
-        <li>Service One</li>
-        <li>Service Two</li>
-        <li>Service Three</li>
-    </ul>
-</section>
-<section id="contact" style="padding:20px; background:#f8f8f8;">
-    <h2 style="color:#992B40;">Contact Us</h2>
-    <p>Email us at <a href="mailto:info@pathwayglobal.info">info@pathwayglobal.info</a></p>
-</section>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-card">
+        <h1>Pathway Global</h1>
+        <p class="tagline">Reliable Construction, MEP & Facility Solutions in Qatar</p>
+        <a class="btn btn-primary" href="mailto:admin@pathwayglobal.info">Get a Quote</a>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <section id="about" class="about">
+      <h2>About Us</h2>
+      <p>Pathway Global is a Doha-based contracting company specialising in construction contracting, MEP works, hospitality staffing and professional cleaning services. We focus on clear communication, reliable scheduling, and quality workmanship for clients across Qatar.</p>
+    </section>
+
+    <section id="services" class="services-grid">
+      <h2>Our Services</h2>
+      <div class="grid">
+        <article class="card">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="7" width="5" height="11" rx="1" stroke="currentColor" stroke-width="1.5"/><rect x="10" y="4" width="5" height="14" rx="1" stroke="currentColor" stroke-width="1.5"/><rect x="17" y="9" width="4" height="9" rx="1" stroke="currentColor" stroke-width="1.5"/></svg>
+          <h3>Construction Contracting</h3>
+          <p>General building works, fit-outs and civil construction with local knowledge of Qatar standards.</p>
+        </article>
+
+        <article class="card">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 12h18" stroke="currentColor" stroke-width="1.5"/><path d="M7 8v8" stroke="currentColor" stroke-width="1.5"/><path d="M12 5v14" stroke="currentColor" stroke-width="1.5"/><path d="M17 10v9" stroke="currentColor" stroke-width="1.5"/></svg>
+          <h3>MEP Works</h3>
+          <p>Mechanical, electrical and plumbing services including installations, testing and maintenance.</p>
+        </article>
+
+        <article class="card">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4h16v4H4z" stroke="currentColor" stroke-width="1.5"/><path d="M3 12h18v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-6z" stroke="currentColor" stroke-width="1.5"/></svg>
+          <h3>Hospitality Services</h3>
+          <p>Professional staffing and support services for hotels, events and facilities.</p>
+        </article>
+
+        <article class="card">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 7h16" stroke="currentColor" stroke-width="1.5"/><path d="M4 11h16" stroke="currentColor" stroke-width="1.5"/><path d="M4 15h16" stroke="currentColor" stroke-width="1.5"/></svg>
+          <h3>Cleaning Services</h3>
+          <p>Commercial, residential and industrial cleaning delivered to high standards and schedules.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:admin@pathwayglobal.info">admin@pathwayglobal.info</a> • Phone: <strong>+974 0000 0000</strong></p>
+      <p>Or send us a quick message:</p>
+      <form action="mailto:admin@pathwayglobal.info" method="post" enctype="text/plain" class="contact-form">
+        <input type="text" name="Name" placeholder="Your name" required>
+        <input type="email" name="Email" placeholder="Email address" required>
+        <textarea name="Message" rows="4" placeholder="How can we help?" required></textarea>
+        <button class="btn btn-secondary" type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Pathway Global Trading Contracting & Services — Doha, Qatar</p>
+    </div>
+  </footer>
 </body>
 </html>
